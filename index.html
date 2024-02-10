@@ -18,9 +18,11 @@
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
     }
     .profile-header {
-      text-align: center;
+      text-align: left;
+      margin-right: 20px;
     }
     .profile-image {
       width: 150px;
@@ -31,6 +33,7 @@
     }
     .profile-name {
       font-size: 24px;
+      font-weight: bold;
       color: #333;
       margin-bottom: 10px;
     }
@@ -39,13 +42,23 @@
       color: #666;
       margin-bottom: 20px;
     }
-    .profile-links {
-      text-align: center;
+    .summary {
+      margin-bottom: 20px;
     }
-    .profile-links a {
+    .projects {
+      margin-bottom: 20px;
+    }
+    .projects h2 {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .project-item {
+      margin-bottom: 10px;
+    }
+    .project-item a {
       color: #007bff;
       text-decoration: none;
-      margin: 0 10px;
     }
   </style>
 </head>
@@ -53,13 +66,25 @@
   <div class="container">
     <div class="profile-header">
       <img class="profile-image" src="profile-pic.jpg" alt="Profile Picture">
+    </div>
+    <div class="profile-info">
       <div class="profile-name">John Doe</div>
       <div class="profile-bio">Software Engineer | Open Source Enthusiast | Tech Blogger</div>
-    </div>
-    <div class="profile-links">
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-      <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
-      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+      <div class="summary">
+        <h2>Summary</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec purus ac risus imperdiet consequat. Etiam sit amet nibh nec enim dapibus tristique.</p>
+      </div>
+      <div class="projects">
+        <h2>Data Science Projects</h2>
+        <div class="project-item"><a href="#">Project 1 - Predictive Analytics</a></div>
+        <div class="project-item"><a href="#">Project 2 - Natural Language Processing</a></div>
+        <div class="project-item"><a href="#">Project 3 - Machine Learning Model Deployment</a></div>
+      </div>
+      <div class="profile-links">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+      </div>
     </div>
   </div>
 </body>
