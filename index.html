@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nikhil Patil - Data Analyst Portfolio</title>
+  <title>Nikhil Patil - Data Analyst</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -38,6 +38,8 @@
     }
     .skills {
       margin-bottom: 30px;
+      text-align: center;
+      animation: slideIn 1s ease-out;
     }
     .skill {
       display: inline-block;
@@ -48,6 +50,8 @@
       margin-right: 10px;
       margin-bottom: 10px;
       font-size: 16px;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
     }
     .projects {
       margin-bottom: 30px;
@@ -72,6 +76,24 @@
       text-decoration: none;
       color: #007bff;
       font-weight: bold;
+    }
+    @keyframes slideIn {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
   </style>
 </head>
